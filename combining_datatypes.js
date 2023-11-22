@@ -79,5 +79,17 @@ function powerButton() {
     }
 }
 
+console.log(powerButton()) // returns Function: options] - this makes sense it's returning the function called options
+//console.log(powerButton(options)) //will not run, can log options because it is in the function
 const options = powerButton();
 options()
+
+//I don't fully understand how I got to this - going to write it down
+//I have called a function powerButton
+//powerButton returns a function called options() that console.logs 'select a song'
+//From trying different ways to log 'select a song' (see above), they didn't work
+//I create a variable called options that is the function powerButton()
+//From there, I can call options which 'pushes' the powerButton, which is the function options(), that will console.log('select a song')
+
+//This is the conclusion I'm coming to, but I'm halfway to understand
+
