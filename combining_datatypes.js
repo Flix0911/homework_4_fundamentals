@@ -93,3 +93,43 @@ options()
 
 //This is the conclusion I'm coming to, but I'm halfway to understand
 
+// ----
+
+
+//1. Make a function add that takes two arguments (numbers) and sums them together
+
+function add(num1, num2) {
+    return num1 + num2;
+}
+
+const sum1 = add(7, 30)
+console.log(sum1)
+
+//2. Make a function subtract that takes two arguments (numbers) and subtracts them
+
+function subtract(num1, num2) {
+    return num1 - num2;
+}
+
+const sum2 = subtract(30, 20)
+console.log(sum2)
+
+//3.Make a function multiply that takes two arguments and multiplies them
+
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+
+const sum3 = multiply(30, 30)
+console.log(sum3)
+
+//4. Make a function divide that takes two arguments and divides them
+
+function divide(num1, num2){
+    return num1 / num2;
+}
+
+sum4 = divide(50000, 50)
+console.log(sum4)
+
+//5. Make a function calculate that takes three arguments. Assume the two arguments are a number ie num1, num2 and a function called operates (a callback).
