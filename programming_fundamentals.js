@@ -45,3 +45,43 @@
 //which one is currently giving you the most struggle
     //A lot of these. I'm repeating myself, not keeping it simple, most likely making teachers/graders think too hard, not everything is doing its job perfectly.
     //I think it will come with time but alas
+
+
+// --
+//Commenting code
+
+const f = l => { //our function is called f
+    let es = 0, p = 0, c = 1, n = 0 //defining values of our variables in this function
+    while (c <= l) { // if c is less than or equal to l
+      n = c + p //n would be equal to c + p
+      [c, p] = [n, c] // c=n while p=c?
+      es += (c % 2 === 0) ? c : 0 //addition of +2 to es, c / 2 equals 0. Unsure that last bit
+      //console.log(es)
+      // console.log(p)
+      // console.log(c)
+      // console.log(n)
+    }
+    return es
+
+  }
+  //In the end, I'm very confused what this is doing.
+  
+  console.log(f(55))
+
+const f2 = (limit) => { //function named f2 with 1 argument, limit
+    let evenSum = 0; //variable evenSum is equal to 0
+    let previous = 0; //variable previous is equal to 0
+    let current = 1; //variable current is equal to 1
+    while (current <= limit) { //while current is less than or equal to limit, the below will occur
+      let next = current + previous; //variable next is 1 + 0 initially
+      previous = current;
+      current = next;
+      if (current % 2 === 0) { 
+        evenSum += current;
+      }
+    }
+    return evenSum;
+  }
+  
+  
+  console.log(f2(44)) //run function f2 with an argument of 55 in limit
