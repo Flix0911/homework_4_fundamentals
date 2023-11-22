@@ -65,6 +65,19 @@ console.log(knit('scarf', 'six_ft'))
 
 const crayonSelector = () => {
     const crayonColor = ['purple', 'blue'];
-    console.log(crayonSelector(crayonColor[0]))
+    console.log(crayonColor[0]) //logged one of the elements - purple
+    };
+//console.log(crayonSelector([0])) //getting closer ~ got [ 'purple', 'blue' ] ~ had a different console.log in the function
+crayonSelector() //ran the function
+
+
+//3. Create a function powerButton that returns a function called options - options should console.log a simple message like select a song. Call that inner function
+
+function powerButton() {
+    return function options() {
+        console.log("select a song")
     }
-crayonSelector('red')
+}
+
+const options = powerButton();
+options()
