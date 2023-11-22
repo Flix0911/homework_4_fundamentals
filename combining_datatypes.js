@@ -45,3 +45,26 @@ const apartmentBuilding = [
 console.log(apartmentBuilding[1][2])//should log Sarah
 
 //--commit: combine objets, array, and functions--//
+
+// ----
+
+//Combine Objects, arrays, and functions more than one level deep
+
+//1. Create a function knit that returns an object that has the following kinds of properties item: scarf, size : 6ft etc. Log a value of that object (hint: call the function and then call a property on the return value).
+
+const knit = (item, size) => {
+    return {
+        item: item,
+        size: size,
+    }
+}
+
+console.log(knit('scarf', 'six_ft'))
+
+//2. Create a function crayonSelector that returns an object that has an array (you can reuse your crayonBox object). Log one of the elements of that array.
+
+const crayonSelector = () => {
+    const crayonColor = ['purple', 'blue'];
+    console.log(crayonSelector(crayonColor[0]))
+    }
+crayonSelector('red')
