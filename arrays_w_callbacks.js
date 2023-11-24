@@ -114,8 +114,28 @@ console.log(multiply100)
 
 let allUpperCase = panagram.map(v => {
     return {
-        allCaps: panagram.toUpperCase();
+        allCaps: v.toUpperCase()
     }
 })
 
 console.log(allUpperCase)
+
+// --
+
+//Thought questions
+
+//Original array is still there! All I did is make a new array called multiply100 and allUpperCase 
+//Yes I can! Proved that by console.log the new array
+
+// --
+
+//Some
+//1. Find out if some numbers are divisible by 7
+
+let divisiblebySeven = nums.some(v => v % 7 === 0)
+console.log(divisiblebySeven)
+
+//2. Find out if some words have the letter 'a' in them
+
+let doesItHaveA = panagram.some(word => word.includes('a'))
+console.log(doesItHaveA)
