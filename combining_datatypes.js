@@ -184,12 +184,12 @@ console.log(diviOfFunc)
 //Error reading
 //what is meant by the error(s) this produces
 
-foo();
+// foo();
 
-const foo ()=>{ //This arrow function is not correctly defined 
-    //should be foo = () => {}
-    //since it is written in the way above, there is not const variable defined so will be unable to run
-    //we must define the variable that is a function
-    console.log('hi');
-}
+// const foo ()=>{ //This arrow function is not correctly defined 
+//     //should be foo = () => {}
+//     //since it is written in the way above, there is not const variable defined so will be unable to run
+//     //we must define the variable that is a function
+//     console.log('hi');
+// }
 
