@@ -133,3 +133,27 @@ sum4 = divide(50000, 50)
 console.log(sum4)
 
 //5. Make a function calculate that takes three arguments. Assume the two arguments are a number ie num1, num2 and a function called operates (a callback).
+
+function calculate(num1, num2, operates) {
+    return operates(num1, num2);
+
+}
+
+
+//6. Make it so that when calculate is invoked, the callback "operates" on the numbers and returns the value.
+
+
+const sumOfFunc = calculate(5, 25, add)
+console.log(sumOfFunc)
+
+//7. Call calculate 4 times, each time using one of the operation functions you wrote
+
+const subrOfFunc = calculate(5, 25, subtract)
+console.log(subrOfFunc)
+
+const multOfFunc = calculate(5, 25, multiply)
+console.log(multOfFunc)
+
+
+const diviOfFunc = calculate(5, 25, divide)
+console.log(diviOfFunc)
