@@ -157,3 +157,39 @@ console.log(multOfFunc)
 
 const diviOfFunc = calculate(5, 25, divide)
 console.log(diviOfFunc)
+
+
+// ----
+
+//Function definition placement
+
+
+//clean up this code, so that it works and has function definitions in the correct palce
+
+
+// const bar = () => {
+//     console.log('bar here');
+//     bar();
+// }
+
+
+// const foo = () => {
+//     console.log('foo here');
+//     foo();
+// }
+
+// bar();
+
+
+//Error reading
+//what is meant by the error(s) this produces
+
+foo();
+
+const foo ()=>{ //This arrow function is not correctly defined 
+    //should be foo = () => {}
+    //since it is written in the way above, there is not const variable defined so will be unable to run
+    //we must define the variable that is a function
+    console.log('hi');
+}
+
