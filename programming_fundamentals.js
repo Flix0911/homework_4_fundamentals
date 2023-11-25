@@ -50,31 +50,31 @@
 // --
 //Commenting code
 
-const f = l => { //our function is called f
-    let es = 0, p = 0, c = 1, n = 0 //defining values of our variables in this function
-    while (c <= l) { // if c is less than or equal to l
-      n = c + p //n would be equal to c + p
-      [c, p] = [n, c] // c=n while p=c?
-      es += (c % 2 === 0) ? c : 0 //addition of +2 to es, c / 2 equals 0. Unsure that last bit
+// const f = l => { //our function is called f
+//     let es = 0, p = 0, c = 1, n = 0 //defining values of our variables in this function
+//     while (c <= l) { // if c is less than or equal to l
+//       n = c + p //n would be equal to c + p
+//       [c, p] = [n, c] // c=n while p=c?
+//       es += (c % 2 === 0) ? c : 0 //addition of +2 to es, c / 2 equals 0. Unsure that last bit
       //console.log(es)
       // console.log(p)
       // console.log(c)
       // console.log(n)
-    }
-    return es
+//     }
+//     return es
 
-  }
+//   }
   //In the end, I'm very confused what this is doing.
   
-  console.log(f(55))
+//   console.log(f(55))
 
 const f2 = (limit) => { //function named f2 with 1 argument, limit
-    let evenSum = 0; //variable evenSum is equal to 0
-    let previous = 0; //variable previous is equal to 0
-    let current = 1; //variable current is equal to 1
+    let evenSum = 0; //variable evenSum is equal to 0 at start
+    let previous = 0; //variable previous is equal to 0 at start
+    let current = 1; //variable current is equal to 1 at start
     while (current <= limit) { //while current is less than or equal to limit, the below will occur
-      let next = current + previous; //variable next is 1 + 0 initially
-      previous = current;
+      let next = current + previous; //variable next is 1 + 0 initially ~ 1+1 after that, 1+2, 2+3, 3+5, 5+8, 8+13, 13+21, I don't think it can go further than that
+      previous = current; 
       current = next;
       if (current % 2 === 0) { 
         evenSum += current;
@@ -84,4 +84,4 @@ const f2 = (limit) => { //function named f2 with 1 argument, limit
   }
   
   
-  console.log(f2(44)) //run function f2 with an argument of 55 in limit
+  console.log(f2(44)) //run function f2 with an argument of 44 in limit. It cannot exceed 44 and I believe 34 will be the last number
